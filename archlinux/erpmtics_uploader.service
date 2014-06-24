@@ -1,0 +1,12 @@
+[Unit]
+Description=Provide a task for upload to cloud data on bash 
+After=syslog.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/erpmtics_uploader.pid
+ExecStart=/usr/bin/erpmtics_uploader
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

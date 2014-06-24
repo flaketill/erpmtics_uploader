@@ -1,0 +1,18 @@
+/etc/init.d/erpmtics_uploader
+
+chmod u+x *.sh
+
+./erpmtics_uploader
+
+
+Authorizing Your App with Google Drive
+
+
+For developers EG:
+
+
+[armando@localhost erpmtics_uploader]$  sudo python2 setup.py develop
+
+[armando@localhost erpmtics_uploader]$ erpmtics_uploader 
+
+

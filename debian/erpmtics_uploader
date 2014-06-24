@@ -1,0 +1,34 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          erpmtics_uploader
+# Short-Description: Provide a task for upload to cloud data on bash 
+# Description:       Provide a task for upload to cloud data on bash, ask for
+# password or token (Use oAUTH), specific files to upload
+### END INIT INFO
+
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/local/sbin/erpmtics_uploader.py
+NAME=erpmtics_uploader
+DESC="erpmtics_uploader"
+
+test -f $DAEMON || exit 0
+
+set -e
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    echo -n "Starting $DESC: "
+    python2 "${NAME}"
+    ;;
+  stop)
+    echo -e "Attempting to stop script"
+    ;;
+   *)
+    echo "Usage: /etc/init.d/erpmtics_uploader (start|stop)"
+    exit
+    ;;
+esac
+
+exit 0

@@ -1,0 +1,14 @@
+#files temp
+
+tmp*.sh
+
+#secret files
+
+secret.py
+client_secrets.json
+settings.yaml
+
+#python files
+
+*.pyc
+

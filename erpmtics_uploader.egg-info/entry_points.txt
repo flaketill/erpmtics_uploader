@@ -1,0 +1,6 @@
+[console_scripts]
+erpmtics_uploader = erpmtics_uploader.app:main
+
+[setuptools.installation]
+erpmtics_uploader = erpmtics_uploader.app:main
+

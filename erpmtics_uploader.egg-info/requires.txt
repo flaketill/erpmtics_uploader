@@ -1,0 +1,14 @@
+setuptools
+ez_setup
+bbfreeze
+cx_Freeze
+python-daemon
+zc.lockfile
+beefish
+APScheduler
+shovel
+invoke
+Paver
+doit
+docutils
+PyDrive
